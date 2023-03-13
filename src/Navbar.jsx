@@ -1,30 +1,49 @@
-import TodoIcon from './images/icon-todo.svg'
-import CalendarIcon from './images/icon-calendar.svg'
-import RemindersIcon from './images/icon-reminders.svg'
-import PlanningIcon from './images/icon-planning.svg'
 import Logo from './images/logo.svg'
 import DropdownList from './DropdownList'
 import './navbar.css'
 
 
-const items = [
-  {id: 1, name: 'Item 1', src: {TodoIcon} },
-  {id: 2, name: 'Item 2'},
-  {id: 3, name: 'Item 3'},
+const featuresItems = [
+  {id: 1, name: 'Todo List', url: '#', image: './images/icon-todo.svg'},
+  {id: 2, name: 'Calendar', url: '#', image: './images/icon-calendar.svg'},
+  {id: 3, name: 'Reminders', url: '#', image: './images/icon-reminders.svg'},
+  {id: 4, name: 'Planning', url: '#', image: './images/icon-planning.svg'},
+]
+
+const companyItems = [
+  {id: 1, name: 'History', url: '#', image: ''},
+  {id: 2, name: 'Our Team', url: '#', image: ''},
+  {id: 3, name: 'Blog', url: '#', image: ''},
 ]
 
 
 function Navbar() {
   return (
-    <nav>
-       <div className="container nav__">
-        <img src={Logo} alt="Website's logo" />
-        <DropdownList 
-          buttonText='Features'
-          items={items}
-        />
+    <>
+     <nav>
+      <div className='container container__left'>
+          <img id='logo' src={Logo} alt="Website's logo" />
+          <DropdownList 
+            buttonText='Features'
+            items={featuresItems}
+          />
+          <DropdownList 
+            buttonText='Company'
+            items={companyItems}
+          />
+          <a className='onhover' href="#">Careers</a>
+          <a className='onhover' href="#">About</a>
+          
+      </div>
+      <div className="list__wrapper">
+        <div className="container container__right">
+          <a className='onhover' href="#">Login</a>
+          <a className='onhover' href="#">Register</a>
+        </div> 
       </div>
     </nav>
+    </>
+   
   )
 }
 

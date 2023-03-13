@@ -1,0 +1,85 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 18px;
+    padding: 2rem 3.5rem;
+}
+
+#logo{
+    margin-right: 2.5rem;
+    width: 110px;
+}
+
+.container{ 
+   display: flex;
+    gap: 3.5rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.list__wrapper{
+   display: block;  
+}
+
+.dropdown__container{
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    margin-left: 10px;
+    width: 15px;
+}
+
+.dropdown__lists{
+    overflow-wrap: unset;
+    display: block;
+    position: absolute; 
+    text-align: left;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dropdown__lists img{
+    margin-right: 1rem;
+    width: 20px;
+}
+
+.dropdown__lists li{
+    margin: 1.4rem ;
+}
+
+.Features{
+    top: 45px;
+    left: -100px;
+    right: 0px;
+}
+
+.Company{
+    top: 45px;
+    left: 0px;
+    right: -45px;
+  
+}
+
+.Company li{
+    margin: 1.4rem 0;
+}
+
+.list__wrapper a:last-child{
+    border: 2px solid var(--Medium_Gray);
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+}
+
+.list__wrapper a:last-child:hover{
+    border: 2px solid var(--Almost_Black);
+}
+
+
+.onhover:hover{
+    color: var(--Almost_Black);
+}
