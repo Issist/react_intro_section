@@ -16,10 +16,14 @@
   font-family: 'Epilogue', sans-serif;
 }
 
-
+button{
+  border: none;
+  background: none;
+}
 
 body{
-  background: var(--Almost_White);
+  background: grey/* var(--Almost_White) */;
+
 }
 
 img{

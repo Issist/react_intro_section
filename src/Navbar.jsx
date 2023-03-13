@@ -1,6 +1,9 @@
 import Logo from './images/logo.svg'
 import DropdownList from './DropdownList'
+import MenuIcon from './images/icon-menu.svg'
+import CloseIcon from './images/icon-close-menu.svg'
 import './navbar.css'
+import { useState } from 'react'
 
 
 const featuresItems = [
@@ -17,33 +20,50 @@ const companyItems = [
 ]
 
 
-function Navbar() {
+const Navbar = () => {
+  const [isNavShowing, setIsNavShowing] = useState(false);
+
   return (
     <>
      <nav>
-      <div className='container container__left'>
-          <img id='logo' src={Logo} alt="Website's logo" />
-          <DropdownList 
-            buttonText='Features'
-            items={featuresItems}
-          />
-          <DropdownList 
-            buttonText='Company'
-            items={companyItems}
-          />
-          <a className='onhover' href="#">Careers</a>
-          <a className='onhover' href="#">About</a>
-          
-      </div>
-      <div className="list__wrapper">
-        <div className="container container__right">
-          <a className='onhover' href="#">Login</a>
-          <a className='onhover' href="#">Register</a>
-        </div> 
-      </div>
+        <img id='logo' src={Logo} alt="Website's logo" />
+        <div className={`container ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
+            <ul className='list-left'>
+                <li className="nav__list-item">
+                    <DropdownList 
+                      buttonText='Features'
+                      items={featuresItems}
+                    />
+                </li>
+                <li className="nav__list-item">
+                    <DropdownList 
+                      buttonText='Company'
+                      items={companyItems}
+                    />  
+                </li>
+                <li className="nav__list-item">
+                    <a className='onhover' href="#">Careers</a>
+                </li>
+                <li className="nav__list-item">
+                    <a className='onhover' href="#">About</a>
+                </li>
+            </ul>
+            <ul className='list-right'>  
+                <li>
+                    <a className='onhover' href="#">Login</a>
+                </li>
+                <li>
+                    <a className='onhover' href="#">Register</a>
+                </li>
+            </ul>
+        </div>
+        
+        <button className='nav__toggle-btn' onClick={() => setIsNavShowing(prev => !prev)}>
+            <img src={ !isNavShowing ? MenuIcon : CloseIcon } alt="Navigation bar" />
+        </button>  
     </nav>
-    </>
-   
+  </>
+
   )
 }
 

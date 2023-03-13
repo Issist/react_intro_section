@@ -1,26 +1,42 @@
 nav{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    
     font-size: 18px;
     padding: 2rem 3.5rem;
 }
 
 #logo{
-    margin-right: 2.5rem;
     width: 110px;
+    margin-right: 5.5rem;
 }
 
-.container{ 
-   display: flex;
-    gap: 3.5rem;
-    text-align: center;
+.container{
+    display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    flex-grow: 5;
 }
 
-.list__wrapper{
-   display: block;  
+.list-left{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+.list-right{
+    display: flex;
+    align-items: inherit;
+    gap: 4rem;
+}
+
+.list-right li:last-child{
+    border: 2px solid var(--Medium_Gray);
+    border-radius: 18px;
+    padding: 1rem 2rem;
+}
+
+.nav__list-item-right{
+    align-self: right;
 }
 
 .dropdown__container{
@@ -28,58 +44,123 @@ nav{
     cursor: pointer;
 }
 
-.dropdown__arrow{
-    margin-left: 10px;
-    width: 15px;
-}
-
-.dropdown__lists{
-    overflow-wrap: unset;
-    display: block;
-    position: absolute; 
-    text-align: left;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.dropdown__lists img{
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.dropdown__lists li{
-    margin: 1.4rem ;
-}
-
 .Features{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    border-radius: 15px;
+    padding: 1.5rem 2rem 0.5rem;
+    position: absolute;
     top: 45px;
-    left: -100px;
+    left: -90px;
     right: 0px;
 }
 
-.Company{
+.Company{ 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    padding: 1.5rem 1rem 0.5rem;
+    position: absolute;
     top: 45px;
     left: 0px;
-    right: -45px;
-  
+    right: -40px;
 }
 
-.Company li{
-    margin: 1.4rem 0;
+.Company li, .Features li{
+    margin-bottom: 1.5rem;
 }
 
-.list__wrapper a:last-child{
-    border: 2px solid var(--Medium_Gray);
-    padding: 1rem 1.5rem;
-    border-radius: 15px;
+.nav__toggle-btn{
+    display: none;
 }
 
-.list__wrapper a:last-child:hover{
-    border: 2px solid var(--Almost_Black);
+.list-right li:last-child:hover{
+    border-color: var(--Almost_Black);
 }
-
 
 .onhover:hover{
     color: var(--Almost_Black);
+    border-color: var(--Almost_Black);
 }
+
+
+/* Media query */
+@media screen and (max-width: 675px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 7rem 1.5rem;
+    }
+
+    nav .container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        margin: 0;
+        padding: 6rem 2rem 0;
+        background: antiquewhite;
+        width: 65vw;
+        height: 100vh;
+        align-items: flex-start;
+    }
+
+    .list-left, .list-right{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        
+    }
+
+    .list-right{
+        align-items: center;
+        width: 100%;
+    }
+
+    .list-right li:last-child{
+        padding: 1rem 31%;
+    }
+
+    .Features, .Company{
+        position: static;
+        box-shadow: none;
+    }
+    #logo{
+        width: 80px;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .nav__toggle-btn{
+        display: inline-block;
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .show__nav{
+        display: block;
+        
+    }
+
+    .hide__nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
