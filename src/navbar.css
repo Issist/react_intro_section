@@ -30,9 +30,7 @@ nav{
 }
 
 .list-right li:last-child{
-    border: 2px solid var(--Medium_Gray);
-    border-radius: 18px;
-    padding: 1rem 2rem;
+   
 }
 
 .nav__list-item-right{
@@ -42,6 +40,11 @@ nav{
 .dropdown__container{
     position: relative;
     cursor: pointer;
+}
+
+.dropdown__arrow{
+    margin-left: 10px;
+    width: 13px;
 }
 
 .Features{
@@ -72,14 +75,31 @@ nav{
     display: none;
 }
 
-.list-right li:last-child:hover{
-    border-color: var(--Almost_Black);
+#register{
+    border: 2px solid var(--Medium_Gray);
+    border-radius: 18px;
+    padding: 1rem 2rem;
 }
 
-.onhover:hover{
+#register:hover, #register:hover a{
+    border-color: var(--Almost_Black);
+    color: var(--Almost_Black);   
+    font-weight: 700;
+}
+
+.overall{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+/* .onhover:hover{
     color: var(--Almost_Black);
     border-color: var(--Almost_Black);
-}
+} */
 
 
 /* Media query */
@@ -87,7 +107,8 @@ nav{
     nav{
         flex-direction: column;
         align-items: flex-end;
-        padding: 7rem 1.5rem;
+        padding: 2rem 0rem;
+        max-width: 100vw;
     }
 
     nav .container{
@@ -96,8 +117,8 @@ nav{
         right: 0;
         flex-direction: column;
         margin: 0;
-        padding: 6rem 2rem 0;
-        background: antiquewhite;
+        padding: 6rem 1rem 0;
+        background: var(--Almost_White);
         width: 65vw;
         height: 100vh;
         align-items: flex-start;
@@ -133,8 +154,8 @@ nav{
     .nav__toggle-btn{
         display: inline-block;
         position: absolute;
-        top: 3rem;
-        right: 1rem;
+        top: 3em;
+        right: 1em;
         transform: translate(-50%, -50%);
     }
 

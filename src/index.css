@@ -11,7 +11,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: var(--Medium_Gray);
   list-style-type: none;
   font-family: 'Epilogue', sans-serif;
 }
@@ -22,11 +21,22 @@ button{
 }
 
 body{
-  background: grey/* var(--Almost_White) */;
+  background: var(--Almost_White);
 
 }
 
 img{
   max-width: 100%;
   object-fit: contain;
+}
+
+.onhover{
+  color: var(--Medium_Gray);
+
+}
+
+.onhover:hover{
+  color: var(--Almost_Black);
+  border-color: var(--Almost_Black);
+  font-weight: 700;
 }

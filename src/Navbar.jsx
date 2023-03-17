@@ -26,6 +26,7 @@ const Navbar = () => {
   return (
     <>
      <nav>
+        <div className={isNavShowing ? 'overall' : 'hide__nav'}></div>
         <img id='logo' src={Logo} alt="Website's logo" />
         <div className={`container ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
             <ul className='list-left'>
@@ -52,7 +53,7 @@ const Navbar = () => {
                 <li>
                     <a className='onhover' href="#">Login</a>
                 </li>
-                <li>
+                <li id='register'>
                     <a className='onhover' href="#">Register</a>
                 </li>
             </ul>
