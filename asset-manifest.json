@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_intro_section/static/css/main.f77fa0c0.css",
+    "main.css": "/react_intro_section/static/css/main.7053ce30.css",
     "main.js": "/react_intro_section/static/js/main.1edcf84e.js",
     "static/media/image-hero-desktop.png": "/react_intro_section/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/react_intro_section/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
@@ -10,11 +10,11 @@
     "static/media/icon-menu.svg": "/react_intro_section/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/react_intro_section/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/react_intro_section/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.f77fa0c0.css.map": "/react_intro_section/static/css/main.f77fa0c0.css.map",
+    "main.7053ce30.css.map": "/react_intro_section/static/css/main.7053ce30.css.map",
     "main.1edcf84e.js.map": "/react_intro_section/static/js/main.1edcf84e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f77fa0c0.css",
+    "static/css/main.7053ce30.css",
     "static/js/main.1edcf84e.js"
   ]
 }
