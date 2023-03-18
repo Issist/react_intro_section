@@ -27,30 +27,26 @@
 }
 
 .btn__main{
-    margin-bottom: 100px;
     border: 2px solid var(--Medium_Gray);
     padding: 1rem 2rem;
     font-size: 16px;
     border-radius: 15px;
     background: var(--Almost_Black);
-}
-
-.btn__main a{
     color: var(--Almost_White);
-
 }
+
 
 .btn__main:hover{
     background: var(--Almost_White);
-}
-
-.btn__main:hover a{
     color: var(--Almost_Black);
+
 }
 
 .image__container{
     display: flex;
     gap: 2rem;
+    margin-top: 100px;
+
 }
 
 .image-hero{
@@ -86,13 +82,10 @@
         max-width: 390px;
     }
 
-    .btn__main{
-        margin-bottom: 50px;
-    }
-
     .image__container{
         gap: 1rem;
         justify-content: center;
+        margin-top: 50px;
     }
 
     .image__container img{
