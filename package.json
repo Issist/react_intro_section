@@ -1,7 +1,7 @@
 {
   "name": "react_intro_section",
   "version": "0.1.0",
-  "homepage": "https://Issist.github.io/React_intro_section",
+  "homepage": "https://Issist.github.io/react_intro_section",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
