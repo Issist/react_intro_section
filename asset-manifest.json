@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06b9d645.css",
+    "main.js": "/static/js/main.235d5330.js",
+    "static/media/image-hero-desktop.png": "/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
+    "static/media/image-hero-mobile.png": "/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
+    "static/media/logo.svg": "/static/media/logo.1c174ccea84ec59ff8801662c788919d.svg",
+    "index.html": "/index.html",
+    "static/media/icon-close-menu.svg": "/static/media/icon-close-menu.3f33fd68b142340b7eb8c6887f92ee0c.svg",
+    "static/media/icon-menu.svg": "/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
+    "static/media/icon-arrow-down.svg": "/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
+    "static/media/icon-arrow-up.svg": "/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
+    "main.06b9d645.css.map": "/static/css/main.06b9d645.css.map",
+    "main.235d5330.js.map": "/static/js/main.235d5330.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b9d645.css",
+    "static/js/main.235d5330.js"
+  ]
+}
